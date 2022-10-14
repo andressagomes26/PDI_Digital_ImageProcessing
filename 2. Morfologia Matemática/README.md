@@ -17,6 +17,12 @@ Realize as operações de erosão, dilatação, abertura	e fechamento em todas a
 Operações morfológicas são operações que modificam o formato ou a estrutura dos objetos representados	em uma imagem. Para submeter uma imagem a um tratamento com
 operações	morfológicas é necessário a existência de um elemento estruturante, responsábel por percorrer toda a imagem a ser tratada, alterando o valor de cada pixel, de acordo com o padrão definido pelo elemento.
 
+### Elementos Estruturantes
+- **Retangular** 
+- **Elipse (circular)** 
+- **Linha** 
+- **Cruz**
+
 ### Operações 
 
 - **Erosão:** Caracterizada	pela corrosão das arestas do objeto de interesse, resultando	em uma	imagem "encolhida"	do objeto.	
