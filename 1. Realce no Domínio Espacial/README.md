@@ -37,21 +37,29 @@ A suavização da imagens ou "blur" é o processo de tratamento de ruído em ima
 
 - O resultado, exibido na figura abaixo, apresenta a aplicação do filtro da média para a primeira imagem com ruído do tipo "sal	e pimenta". Vale ressaltar, que quanto maior a máscara mais	intenso	será o efeito	de suavização. Logo, para a máscara do filtro de tamanhos 7x7 o efeito de suavização da imagem foi maior. Entretanto, o filtro não foi suficiente para remover o ruído da imagem.
 
-![image](https://user-images.githubusercontent.com/60404990/195731113-50c69d42-4be1-472f-8e26-a759ffc502dd.png)
+![image](https://user-images.githubusercontent.com/60404990/195734084-6855e048-d2e3-44e4-970c-ddbc7d921f4d.png)
 
 <p align="center">Imagem original (lenna) seguida pelas imagens com a aplicação do filtro da média 3x3 (N=9), 5x5 (N=25) e 7x7 (N=49)</p>
 
 - Para a segunda imagem é possível observar o efeito de "borramento" à medida que o tamanho da máscara aumenta.
  
-![image](https://user-images.githubusercontent.com/60404990/195731845-3493b8c0-6e3d-4aee-b5df-14b740e641a1.png)
+![image](https://user-images.githubusercontent.com/60404990/195734117-3742ad1c-84b2-489b-acae-63ed683a8674.png)
 
 <p align="center">Imagem original (cameraman) seguida pelas imagens com a aplicação do filtro da média 3x3 (N=9), 5x5 (N=25) e 7x7 (N=49)</p>
 
 ### (b) Filtro da Média: 3x3 (N=16)
 
-- Para a segunda tarefa foi criada uma máscara de filtro para aplicar o filtro da média com dimensões iguais a 3x3. A constante multiplicadora (N=16) é dada por 1 dividido pela soma dos valores dos coeficientes do kernel. O resultado foi bastante semelhante ao apresentado na atividade anterior para o kernel 3x3.
+- Para a segunda tarefa foi criada uma máscara de filtro para aplicar o filtro da média com dimensões iguais a 3x3. A constante multiplicadora (N=16) é dada por 1 dividido pela soma dos valores dos coeficientes do kernel. 
 
-imagem
+![image](https://user-images.githubusercontent.com/60404990/195734172-c758fa58-86fe-4b70-9b13-2662e704b61a.png)
+
+<p align="center">Imagem original (lenna) seguida pela imagem com a aplicação do filtro da média 3x3 (1/16)</p>
+
+- O resultado foi bastante semelhante ao apresentado na atividade anterior para o kernel 3x3 (N=9).
+
+![image](https://user-images.githubusercontent.com/60404990/195734254-0a652522-9d9d-4ad4-98d1-9c2bfabb2b35.png)
+
+<p align="center">Imagem original (lenna) seguida pelas imagens com a aplicação do filtro da média 3x3 (N=9) e 3x3 (1/16)</p>
 
 ### (b) Filtro da Mediana: 3x3, 5x5, 7x7
 - Por fim, foi aplicado o filtro da mediana, conhecido por apresentar	bons resultados no tratamento	de ruído do	tipo "sal	e pimenta". As máscaras definidas possuem dimensões iguais a 3x3, 5x5, 7x7. Nessa processo, o filtro atua alterando	 o valor de	cada pixel-alvo	pela mediana dos valores dos pixels vizinhos.
@@ -74,6 +82,3 @@ imagem
 
 ## Autores
 - Andressa Gomes Moreira - andressagomes@alu.ufc.br.
-
-## Status do Projeto
-- O projeto encontra-se finalizado, pois o objetivo foi alcançado, porém, está sujeito a devidas mudanças e melhorias.
