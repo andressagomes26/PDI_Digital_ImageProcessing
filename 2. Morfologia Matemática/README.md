@@ -91,7 +91,7 @@ operações	morfológicas é necessário a existência de um elemento estruturan
 - Por fim, para as imagens em tons de cinza, a operação de fechamento tende a suprimir pequenas	regiões	escuras, uniformizando a iluminação dos objetos	fotografados.
 ![image](https://user-images.githubusercontent.com/60404990/195909833-30d5fca2-99dd-49f6-bb55-682945e197fc.png)
 
-- Todos os resultados para todas as operações estão expostos no código.
+- Os resultados para todas as operações estão expostos no código.
 
 ## Referências
 - Estudo baseado no livro "Introdução à Visão Computacional - Uma abordagem prática com Python e OpenCV"
