@@ -3,7 +3,7 @@
 import cv2
 from matplotlib import pyplot as plt
 
-def plotImage(image, cresc_reg, image_watershed, image_kmeans, image_otsu):
+def plotImage(image, image_cresc_reg, image_watershed, image_kmeans, image_otsu):
     image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
     # image_watershed = cv2.cvtColor(image_watershed, cv2.COLOR_BGR2RGB)
     image_kmeans = cv2.cvtColor(image_kmeans, cv2.COLOR_BGR2RGB)
@@ -13,7 +13,7 @@ def plotImage(image, cresc_reg, image_watershed, image_kmeans, image_otsu):
     plt.subplot(1, 5, 1), plt.imshow(image), plt.title("Original")
     plt.xticks([]), plt.yticks([])
 
-    plt.subplot(1, 5, 2), plt.imshow(image_kmeans), plt.title("Crescimento de Regiões")
+    plt.subplot(1, 5, 2), plt.imshow(image_cresc_reg), plt.title("Crescimento de Regiões")#, cmap="gray"
     plt.xticks([]), plt.yticks([])
 
     plt.subplot(1, 5, 3), plt.imshow(image_watershed), plt.title("Watershed")

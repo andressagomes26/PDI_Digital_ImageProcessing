@@ -2,7 +2,6 @@
 import cv2
 import os
 
-
 def load_data(datadir):
     img_array = []
     path = os.path.join(datadir)
