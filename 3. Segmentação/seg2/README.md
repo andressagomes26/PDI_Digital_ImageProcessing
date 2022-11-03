@@ -1,33 +1,43 @@
-<h1 align="center">Morfologia Matemática</h1>
+<h1 align="center">Segmentação de Imagens</h1>
 Atividade referente à disciplina Processamento Digital de Imagens do Programa	de	Pós-Graduação em	Engenharia	Elétrica	e	de Computação (UFC) sobre Morfologia Matemática.
 
 ## Sobre a atividade
-Realize as operações de erosão, dilatação, abertura	e fechamento em todas as imagens binárias (imgs_pb.zip) e também nas	 em	 níveis	de cinza (imgs_cinza.zip). Faça a variação com os	elementos estruturantes: quadrado, linha e circular	 com até três	 dimensões distintas.	Descreva as diferenças apresentas por	operação	e	dimensão	do	elemento	estruturante.
+Implementar	os	algoritmos	de	segmentação	que	seguem,	utilizando	as imagens	de	teste e avaliando	o	desempenho do	algoritmo	em cada	imagem.	
+
+a.	Crescimento	de	Regiões;
+
+b.	Watershed;
+
+c.	K-Means.
+
+d.	Otsu
 
 ## Dependências
-- Jupyter Notebook;
+- PyCharm;
 
 ## Linguagens e Bibliotecas
 - Python;
 - OpenCV;
-- Numpy
+- Numpy;
 - Matplotlib;
+- Skimage .
 
-## Morfologia Matemática
-Operações morfológicas são operações que modificam o formato ou a estrutura dos objetos representados	em uma imagem. Para submeter uma imagem a um tratamento com
-operações	morfológicas é necessário a existência de um elemento estruturante, responsábel por percorrer toda a imagem a ser tratada, alterando o valor de cada pixel, de acordo com o padrão definido pelo elemento.
+## Segmentação de imagens
+A	 segmentação de	 objetos em	 imagens consiste em separar a área de interesse em	uma	nova imagem, excluindo o segundo plano da região.
+O	 objeto	 de interesse é	considerado o primeiro plano da imagem. Dessa forma, a segmentação é o princípio para a extração de características	de um objeto.
 
-### Elementos Estruturantes
-- **Retangular** 
-- **Elipse (circular)** 
-- **Linha** 
-- **Cruz**
+## Algoritmos	de	segmentação 
 
-### Operações 
+### Crescimento	de Regiões
 
-- **Erosão:** Caracterizada	pela corrosão das arestas do objeto de interesse, resultando	em uma	imagem "encolhida"	do objeto.	
-- **Dilatação:** É o oposto da operação	de erosão. A área	do objeto	de interesse será	dilatada,	ou seja, o objeto	do primeiro	plano ficará maior do que era inicialmente.
-- **Abertura:** Caracterizada	pela operação	de erosão seguida da operação de dilatação.	 Assim como a operação de	 erosão, também	 é usada para tratar ruídos.
+### Watershed
+O algoritmo é baseado no conceito de bacias hidrográficas, na qual, a visualização de uma imagem em três dimensões. Desse modo, uma das principais aplicações da segmentação por watershed é a extração de objetos quase uniformes do fundo. O algoritmo utiliza o conceito de marcadores, para controlar a supersegmentação, ou seja, o excesso de regiões segmentadas. Logo, são definidos marcadores internos associados aos objetos de interesse e indicadores externos associados ao fundo.
+
+### K-Means
+
+### Otsu
+
+
 - **Fechamento:** Usada	para preencher	a	imagem. Consiste na operação de dilatação, seguida	da operação	de erosão.
 
 ## O Código
