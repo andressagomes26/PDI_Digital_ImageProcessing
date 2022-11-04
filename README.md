@@ -3,12 +3,14 @@ Repositório destinado às atividades da disciplina Processamento Digital de Ima
 
 ## Dependências
 - Jupyter Notebook;
+- PyCharm.
 
 ## Linguagens e Bibliotecas
 - Python;
 - OpenCV;
-- Numpy
+- Numpy;
 - Matplotlib;
+- Skimage. 
 
 ## Conteúdo
 
