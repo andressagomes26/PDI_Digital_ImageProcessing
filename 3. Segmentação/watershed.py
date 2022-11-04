@@ -1,14 +1,11 @@
 # Importação das bibliotecas
 import numpy as np
 import cv2
-from skimage import filters
 
 def watershed(img):
     # Binarização Otsu (negativo)
-    gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-    threshold = filters.threshold_otsu(gray)
-    binarized_img = (gray < threshold) * 1
-    binarized_img = binarized_img.astype('uint8')
+    gray = cv2.cvtColor(img, cv2.COLOR_RGB2GRAY)
+    binarized_img = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY_INV + cv2.THRESH_OTSU)[1]
 
     # Operação de abertura
     kernel_ellipse = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (3, 3))
@@ -21,8 +18,7 @@ def watershed(img):
     dist_transform = cv2.distanceTransform(opening_ellipse, cv2.DIST_L2, 5)
 
     # Binarização Otsu
-    threshold1 = filters.threshold_otsu(dist_transform)
-    binarized_img1 = (dist_transform > threshold1) * 1
+    binarized_img1 = cv2.threshold(dist_transform, 0.7 * dist_transform.max(), 255, 0)[1]
 
     # Subtração das imagens
     binarized_img1 = np.uint8(binarized_img1)
@@ -41,6 +37,6 @@ def watershed(img):
     # Aplica o watershed
     markers = cv2.watershed(img, markers)
     img[markers == -1] = [255, 0, 0]
-    img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+    #img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 
     return img
