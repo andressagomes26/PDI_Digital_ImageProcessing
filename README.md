@@ -16,7 +16,7 @@ Repositório destinado às atividades da disciplina Processamento Digital de Ima
 
 - **[Realce no Domínio Espacial](https://github.com/andressagomes26/PDI_Digital_ImageProcessing/tree/main/1.%20Realce%20no%20Dom%C3%ADnio%20Espacial)**
 - **[Morfologia Matemática](https://github.com/andressagomes26/PDI_Digital_ImageProcessing/tree/main/2.%20Morfologia%20Matem%C3%A1tica)**
-- **[Segmentação](https://github.com/andressagomes26/PDI_Digital_ImageProcessing/tree/main/3.%20Segmenta%C3%A7%C3%A3o)
+- **[Segmentação](https://github.com/andressagomes26/PDI_Digital_ImageProcessing/tree/main/3.%20Segmenta%C3%A7%C3%A3o)**
 
 ## Referências
 - Estudo baseado no livro "Introdução à Visão Computacional - Uma abordagem prática com Python e OpenCV".
